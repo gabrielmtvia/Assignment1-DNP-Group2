@@ -1,8 +1,6 @@
 using Application;
 using BlazorUI;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using BlazorUI.Data;
+
 using Contracts;
 using JsonDataAccess;
 
