@@ -13,4 +13,10 @@
       <ProjectReference Include="..\JsonDataAccess\JsonDataAccess.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Pages\SubForum.razor.css.js">
+        <DependentUpon>SubForum.razor</DependentUpon>
+      </None>
+    </ItemGroup>
+
 </Project>
