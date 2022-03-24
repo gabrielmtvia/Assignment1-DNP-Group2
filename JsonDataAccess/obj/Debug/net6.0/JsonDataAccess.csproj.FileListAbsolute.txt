@@ -1,0 +1,17 @@
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\bin\Debug\net6.0\JsonDataAccess.deps.json
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\bin\Debug\net6.0\JsonDataAccess.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\bin\Debug\net6.0\JsonDataAccess.pdb
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\bin\Debug\net6.0\Application.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\bin\Debug\net6.0\Entities.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\bin\Debug\net6.0\Application.pdb
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\bin\Debug\net6.0\Entities.pdb
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.csproj.AssemblyReference.cache
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.AssemblyInfoInputs.cache
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.AssemblyInfo.cs
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.csproj.CopyComplete
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\refint\JsonDataAccess.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\JsonDataAccess.pdb
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\JsonDataAccess\obj\Debug\net6.0\ref\JsonDataAccess.dll

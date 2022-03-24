@@ -1,0 +1,165 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "JsonDataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/JsonDataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JsonDataAccess.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "JsonDataAccess/1.0.0": {
+      "type": "project",
+      "path": "../JsonDataAccess/JsonDataAccess.csproj",
+      "msbuildProject": "../JsonDataAccess/JsonDataAccess.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Application >= 1.0.0",
+      "Contracts >= 1.0.0",
+      "Entities >= 1.0.0",
+      "JsonDataAccess >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\BlazorUI\\BlazorUI.csproj",
+      "projectName": "BlazorUI",
+      "projectPath": "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\BlazorUI\\BlazorUI.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\BlazorUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\Application\\Application.csproj"
+            },
+            "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\Contracts\\Contracts.csproj"
+            },
+            "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\JsonDataAccess\\JsonDataAccess.csproj": {
+              "projectPath": "C:\\Users\\Gabriel\\RiderProjects\\Assignment1-DNP-Group2\\JsonDataAccess\\JsonDataAccess.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

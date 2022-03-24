@@ -1,0 +1,15 @@
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\bin\Debug\net6.0\Application.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\bin\Debug\net6.0\Entities.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\bin\Debug\net6.0\Entities.pdb
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\Application\obj\Debug\net6.0\ref\Application.dll

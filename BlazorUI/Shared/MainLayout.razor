@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+ 
+@inject NavigationManager _navigationManager
+<PageTitle>Assigntment1</PageTitle>
+
+
+<div class="page">
+    
+    <div class="sidebar">
+        <NavMenu/>
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <button class="btn btn-primary" @onclick="Login">Login</button>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+
+    private void Login()
+    {
+        _navigationManager.NavigateTo("/MyLogin");
+    }
+    
+
+}
