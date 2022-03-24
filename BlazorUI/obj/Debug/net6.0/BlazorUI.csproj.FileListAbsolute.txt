@@ -74,3 +74,4 @@ C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\refi
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\BlazorUI.pdb
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\BlazorUI.genruntimeconfig.cache
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\ref\BlazorUI.dll
+C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\scopedcss\Pages\MyLogin.razor.rz.scp.css

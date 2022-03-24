@@ -1,3 +1,19 @@
+/* _content/BlazorUI/Pages/MyLogin.razor.rz.scp.css */
+.divider[b-72affm0ire]:after,
+.divider[b-72affm0ire]:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom[b-72affm0ire] {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom[b-72affm0ire] {
+        height: 100%;
+    }
+}
 /* _content/BlazorUI/Shared/MainLayout.razor.rz.scp.css */
 .page[b-9locippnay] {
     position: relative;
