@@ -19,6 +19,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Application": "1.0.0",
           "Entities": "1.0.0"
         },
         "compile": {

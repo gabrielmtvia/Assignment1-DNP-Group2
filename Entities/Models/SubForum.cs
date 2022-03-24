@@ -21,7 +21,7 @@ public class SubForum
         get;
     }
 
-    public SubForum(  string title, string description)
+    public SubForum( string title, string description)
     {
         
         Title = title;

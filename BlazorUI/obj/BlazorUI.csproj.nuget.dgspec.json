@@ -168,6 +168,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\Application\\Application.csproj"
+              },
               "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\Entities\\Entities.csproj"
               }

@@ -2,6 +2,7 @@ using Application;
 using BlazorUI;
 
 using Contracts;
+using Contracts.ImpContracts;
 using JsonDataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,8 @@ builder.Services.AddScoped<JsonContext>();
 builder.Services.AddScoped<ForumContainer>();
 builder.Services.AddScoped<IUserService, UserServiceImpl>();
 builder.Services.AddScoped<IUserDao, JsonUserDao>();
+builder.Services.AddScoped<SubForumDao, JsonSubForumDao>();
+builder.Services.AddScoped<ISubForum, ISubForumImp>();
 
 var app = builder.Build();
 

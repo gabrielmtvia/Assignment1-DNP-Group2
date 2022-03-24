@@ -1,6 +1,6 @@
 @page "/MyLogin"
 @using Contracts
-
+ 
 @inject NavigationManager navMgr
  @inject IUserService authService
  
@@ -86,9 +86,11 @@
   private string userName;
   private string password;
   private string errorLabel;
-
+  
+  
   private async Task LoginAsync()
   {
+ 
     errorLabel = "";
     try
     {
