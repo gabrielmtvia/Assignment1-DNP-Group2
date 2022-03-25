@@ -6,7 +6,7 @@ namespace JsonDataAccess;
 
 public class JsonForumContext
 {
-    private string userPath = "MyForum.json";
+    private string userPath = "MyyForum.json";
     private ICollection<SubForum>? forums;
 
     

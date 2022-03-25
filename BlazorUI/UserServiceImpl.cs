@@ -12,6 +12,7 @@ public class UserServiceImpl : IUserService
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
     private readonly IUserDao userDao;
     private readonly IJSRuntime jsRuntime;
+    private ClaimsPrincipal? principal;
 
     public UserServiceImpl(IUserDao userDao, IJSRuntime jsRuntime)
     {
@@ -49,6 +50,27 @@ public class UserServiceImpl : IUserService
         await ClearUserFromCacheAsync(); // remove the user object from browser cache
         ClaimsPrincipal principal = CreateClaimsPrincipal(null); // create a new ClaimsPrincipal with nothing.
         OnAuthStateChanged?.Invoke(principal); // notify about change in authentication state
+    }
+
+    public async Task<ClaimsPrincipal?> GetUserAsync()
+    {
+        if (principal != null)
+        {
+            return principal;
+        }
+
+        string userAsJson = await jsRuntime.InvokeAsync<string>("sessionStorage.getItem", "currentUser");
+        if (string.IsNullOrEmpty(userAsJson))
+        {
+            return new ClaimsPrincipal(new ClaimsIdentity());
+        }
+
+        return principal;
+    }
+
+    public Action<ClaimsPrincipal> OnAuthStatesChanged
+    {
+        get; set;
     }
 
     private async Task ClearUserFromCacheAsync()

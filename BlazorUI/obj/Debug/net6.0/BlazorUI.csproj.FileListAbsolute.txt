@@ -38,7 +38,6 @@ C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\
 C:\Users\Gabriel\RiderProjects\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\forum.json
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\appsettings.json
-C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\forum.json
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\users.json
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\BlazorUI.staticwebassets.runtime.json
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\BlazorUI.exe
@@ -76,3 +75,4 @@ C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\Blaz
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\ref\BlazorUI.dll
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\scopedcss\Pages\MyLogin.razor.rz.scp.css
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\scopedcss\Pages\SubForum.razor.rz.scp.css
+C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\MyyForum.json

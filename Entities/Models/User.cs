@@ -9,4 +9,10 @@ public class User
         this.Username = Username;
         this.Password = Password;
     }
+    
+  
+    public User() {
+
+    }
+   
 }
