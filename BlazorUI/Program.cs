@@ -1,10 +1,12 @@
 using Application;
+using Blazor.Authentication;
 using BlazorUI;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using BlazorUI.Data;
+using BlazorUI.Pages;
 using Contracts;
+using Contracts.ImpContracts;
+using Entities.Models;
 using JsonDataAccess;
+using Microsoft.AspNetCore.Components.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +15,13 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<JsonContext>();
 builder.Services.AddScoped<ForumContainer>();
+builder.Services.AddScoped<JsonForumContext>();
 builder.Services.AddScoped<IUserService, UserServiceImpl>();
 builder.Services.AddScoped<IUserDao, JsonUserDao>();
-
+builder.Services.AddScoped<SubForumDao, JsonSubForumDao>();
+builder.Services.AddScoped<ISubForum, ISubForumImp>();
+builder.Services.AddScoped<AuthenticationStateProvider, SimpleAuthenticationStateProvider>();
+builder.Services.AddScoped<User>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

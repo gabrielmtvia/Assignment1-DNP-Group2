@@ -1,0 +1,67 @@
+﻿@page "/SubForum"
+@using Contracts
+@using Entities.Models
+ @inject NavigationManager navMgr
+@inject ISubForum subForumService;
+@inject User  user;
+<AuthorizeView>
+
+    <Authorized>
+        <div class="card">
+            <h3> Hello , @context.User.Identity.Name</h3>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+
+
+        <div class="container bootstrap snippets bootdey">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 col-xs-12">
+                    <div class="well well-sm well-social-post">
+                        <form>
+                            <ul class="list-inline" id='list_PostActions'>
+                                <li class='active'><textarea @bind="title" placeholder="Title"></textarea></li>
+                            </ul>
+
+                            <textarea class="form-control" @bind="description" placeholder="What's in your mind for Description?"></textarea>
+                            <ul class='list-inline post-actions'>
+
+                                <li class='pull-right'><a href="#" @onclick="createPost" class='btn btn-primary btn-xs'>Post</a></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button type="button" class="btn btn-primary btn-lg" @onclick="ClickToSeeTitles"
+                style="padding-left: 2.5rem; padding-right: 2.5rem; ">Click to the Titles</button>
+    </NotAuthorized>
+
+</AuthorizeView>
+
+
+@code {
+    public  string? title;
+    public  string? description;
+ 
+    public async Task createPost()
+    {
+        Console.WriteLine(user.Username + "ddq");
+        Console.WriteLine(title);
+        Console.WriteLine(description);
+        SubForum subForum = new SubForum();
+        subForum.description = description;
+        subForum.title = title;
+        
+       await subForumService.CreateAPost(title,description);
+
+    }
+
+
+    private void ClickToSeeTitles()
+    {
+        navMgr.NavigateTo("/Titles");
+    }
+
+}
