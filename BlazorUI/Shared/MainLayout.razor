@@ -1,11 +1,15 @@
-﻿@inherits LayoutComponentBase
+﻿@using Contracts
+@using BlazorUI.Pages
+@inherits LayoutComponentBase
  
 @inject NavigationManager _navigationManager
+@inject IUserService userService
+
 <PageTitle>Assigntment1</PageTitle>
 
 
 <div class="page">
-    
+
     <div class="sidebar">
         <NavMenu/>
     </div>
@@ -13,6 +17,7 @@
     <main>
         <div class="top-row px-4">
             <button class="btn btn-primary" @onclick="Login">Login</button>
+            <button class="btn btn-primary" @onclick="Logout">Logout</button>
         </div>
 
         <article class="content px-4">
@@ -27,6 +32,11 @@
     {
         _navigationManager.NavigateTo("/MyLogin");
     }
-    
+
+    private void Logout()
+    {
+        userService.LogoutAsync();
+        _navigationManager.NavigateTo("/MyLogin");
+    }
 
 }
