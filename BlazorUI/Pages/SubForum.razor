@@ -26,8 +26,9 @@
 
                             <textarea class="form-control" @bind="description" placeholder="What's in your mind for Description?"></textarea>
                             <ul class='list-inline post-actions'>
-
-                                <li class='pull-right'><a href="#" @onclick="createPost" class='btn btn-primary btn-xs'>Post</a></li>
+                                <button type="button" class="btn btn-primary btn-lg  "@onclick="createPost"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem; ">Post</button>
+                                 
                             </ul>
                         </form>
                         
@@ -39,7 +40,16 @@
                         style="padding-left: 2.5rem; padding-right: 2.5rem; ">Click to the Titles</button>
             </div>
         </div>
-        
+         @if(!string.IsNullOrEmpty(errorLabel)) {
+                <label>@errorLabel</label>
+            }
+                @if (showModal)
+                {
+                    <Modal>
+                        <p>You have successfully added a new Todo item. You should be very proud of yourself</p>
+                     
+                    </Modal>
+                }
       
     </NotAuthorized>
 
@@ -49,7 +59,8 @@
 @code {
     public  string? title;
     public  string? description;
- 
+    private bool showModal;
+    private string errorLabel = String.Empty;
     public async Task createPost()
     {
 
@@ -60,10 +71,14 @@
         subForum.title = title;
         Console.WriteLine(userServiceImp.currentUser);
         await subForumService.CreateAPost(title,description);
-
+        showModal = true;
     }
 
-
+    private void Proceed()
+    {
+        showModal = false;
+        navMgr.NavigateTo("/SubForum");
+    }
     private void ClickToSeeTitles()
     {
         navMgr.NavigateTo("/Titles");
