@@ -142,6 +142,9 @@ a[b-shgz7hyg3z] {
     line-height: 1.5;
     border-radius: .2rem
 }
+.card-title[b-shgz7hyg3z]{
+    font-size: 50px;
+}
 /* _content/BlazorUI/Shared/MainLayout.razor.rz.scp.css */
 .page[b-9locippnay] {
     position: relative;

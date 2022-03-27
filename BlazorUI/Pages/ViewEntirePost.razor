@@ -1,9 +1,30 @@
-﻿@page "/ViewEntirePost/{Id}"
+﻿@page "/ViewEntirePost/{GuidId}"
 @using Contracts
 @using Assigntment1.models
 @inject ISubForum iSubForum
 @inject NavigationManager navMgr;
 @inject SubForum subForum
+
+
+@code {
+   
+    [Parameter]
+    public string? GuidId { get; set; }
+    
+    // public async Task<Assigntment1.models.SubForum> getPost(String GuidId)
+    // {
+    //     Guid myGuid = Guid.Parse(GuidId);
+    //     return await iSubForum.GetPostById(myGuid);
+    // }
+
+    private Assigntment1.models.SubForum model;
+    
+    protected override async void OnInitialized()
+    {
+        Guid myGuid = Guid.Parse(GuidId);
+        model =  await iSubForum.GetPostById(myGuid);
+    }
+}
 
 <h3>ViewEntirePost</h3>
  
@@ -11,29 +32,8 @@
 <div class="col-md-4 col-sm-6">
     <div class="card mb-30 body">
         <div class="card-body text-center">
-            <h4 class="card-title" >   </h4>
-                             
+            <h4 class="card-title">@model.Title</h4>
+            <p>@model.Description</p>
         </div>
     </div>
 </div>
-
-@code {
-   
-    [Parameter]
-    public string? Id { get; set; }
-
-    public String test;
-
-    public async Task<Assigntment1.models.SubForum> getId(String Id)
-    { 
-        Guid myGuid = Guid.Parse(Id);
-       
-        return await iSubForum.GetPostById(myGuid);
-         
-    }
-
-   
-}
-
-
-<p>@Id</p>
