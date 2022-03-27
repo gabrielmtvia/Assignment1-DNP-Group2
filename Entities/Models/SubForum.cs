@@ -4,6 +4,14 @@ namespace Assigntment1.models;
 
 public class SubForum
 {
+    public ICollection<SubForum> AllSubForums { get; set; }
+
+    public Guid Guid
+    {
+        set;
+        get;
+    }
+    
     public User OwnedBy
     {
         set;
@@ -27,6 +35,11 @@ public class SubForum
         Title = title;
         Description = description;
     }
+    public SubForum() {
+        AllSubForums = new List<SubForum>();
 
+    }
+
+    
     public ICollection<Post> Posts { get; set; }
 }

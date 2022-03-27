@@ -1,8 +1,9 @@
 ﻿@page "/SubForum"
 @using Contracts
 @using Entities.Models
- @inject NavigationManager navMgr
+@inject NavigationManager navMgr
 @inject ISubForum subForumService;
+@inject UserServiceImpl userServiceImp;
 @inject User  user;
 <AuthorizeView>
 
@@ -26,16 +27,28 @@
                             <textarea class="form-control" @bind="description" placeholder="What's in your mind for Description?"></textarea>
                             <ul class='list-inline post-actions'>
 
-                                <li class='pull-right'><a href="#" @onclick="createPost" class='btn btn-primary btn-xs'>Post</a></li>
+                                <li class='pull-right'  @onclick="createPost" class='btn btn-primary btn-xs'> Post</li>
                             </ul>
                         </form>
+                        
                     </div>
                 </div>
             </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg  " @onclick="ClickToSeeTitles"
+                        style="padding-left: 2.5rem; padding-right: 2.5rem; ">Click to the Titles</button>
+            </div>
+             @if (showModal)
+                            {
+                                <Modal>
+                                    <p>You have successfully added a new post item. You should be very proud of yourself</p>
+                                    <button @onclick="@Proceed">Wonderful</button>
+                                </Modal>
+                            }
         </div>
-        
-        <button type="button" class="btn btn-primary btn-lg" @onclick="ClickToSeeTitles"
-                style="padding-left: 2.5rem; padding-right: 2.5rem; ">Click to the Titles</button>
+       
+
+      
     </NotAuthorized>
 
 </AuthorizeView>
@@ -45,23 +58,30 @@
     public  string? title;
     public  string? description;
  
+    private bool showModal;
     public async Task createPost()
     {
-        Console.WriteLine(user.Username + "ddq");
-        Console.WriteLine(title);
+       
+     
+        Console.WriteLine();
         Console.WriteLine(description);
         SubForum subForum = new SubForum();
         subForum.description = description;
         subForum.title = title;
-        
-       await subForumService.CreateAPost(title,description);
-
+        Console.WriteLine(userServiceImp.currentUser);
+        await subForumService.CreateAPost(title,description);
+        showModal = true;
     }
 
 
     private void ClickToSeeTitles()
     {
+        showModal = false;
         navMgr.NavigateTo("/Titles");
     }
-
+    private void Proceed()
+    {
+     
+         
+    }
 }

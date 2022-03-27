@@ -27,8 +27,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hamod/DNPTutorial/Assignment1-DNP-Group2/BlazorUI/Pages/Titles.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGl0bGVzLnJhem9y
+[C:/Users/hamod/DNPTutorial/Assignment1-DNP-Group2/BlazorUI/Pages/ViewEntirePost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0VudGlyZVBvc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hamod/DNPTutorial/Assignment1-DNP-Group2/BlazorUI/Shared/SurveyPrompt.razor]
@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope = b-72affm0ire
 [C:/Users/hamod/DNPTutorial/Assignment1-DNP-Group2/BlazorUI/Pages/SubForum.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViRm9ydW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-spg4nlvlyz
+
+[C:/Users/hamod/DNPTutorial/Assignment1-DNP-Group2/BlazorUI/Pages/Titles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGl0bGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-shgz7hyg3z
 
 [C:/Users/hamod/DNPTutorial/Assignment1-DNP-Group2/BlazorUI/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

@@ -76,3 +76,4 @@ C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\ref\
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\scopedcss\Pages\MyLogin.razor.rz.scp.css
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\scopedcss\Pages\SubForum.razor.rz.scp.css
 C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\bin\Debug\net6.0\MyyForum.json
+C:\Users\hamod\DNPTutorial\Assignment1-DNP-Group2\BlazorUI\obj\Debug\net6.0\scopedcss\Pages\Titles.razor.rz.scp.css

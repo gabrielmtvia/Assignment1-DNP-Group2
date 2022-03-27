@@ -22,6 +22,8 @@ builder.Services.AddScoped<SubForumDao, JsonSubForumDao>();
 builder.Services.AddScoped<ISubForum, ISubForumImp>();
 builder.Services.AddScoped<AuthenticationStateProvider, SimpleAuthenticationStateProvider>();
 builder.Services.AddScoped<User>();
+builder.Services.AddScoped<UserServiceImpl>();
+builder.Services.AddScoped<SubForum>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

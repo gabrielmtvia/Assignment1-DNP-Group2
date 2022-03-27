@@ -1,0 +1,39 @@
+﻿@page "/ViewEntirePost/{Id}"
+@using Contracts
+@using Assigntment1.models
+@inject ISubForum iSubForum
+@inject NavigationManager navMgr;
+@inject SubForum subForum
+
+<h3>ViewEntirePost</h3>
+ 
+
+<div class="col-md-4 col-sm-6">
+    <div class="card mb-30 body">
+        <div class="card-body text-center">
+            <h4 class="card-title" >   </h4>
+                             
+        </div>
+    </div>
+</div>
+
+@code {
+   
+    [Parameter]
+    public string? Id { get; set; }
+
+    public String test;
+
+    public async Task<Assigntment1.models.SubForum> getId(String Id)
+    { 
+        Guid myGuid = Guid.Parse(Id);
+       
+        return await iSubForum.GetPostById(myGuid);
+         
+    }
+
+   
+}
+
+
+<p>@Id</p>

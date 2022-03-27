@@ -13,13 +13,16 @@ public class UserServiceImpl : IUserService
     private readonly IUserDao userDao;
     private readonly IJSRuntime jsRuntime;
     private ClaimsPrincipal? principal;
-
+    public String currentUser;
     public UserServiceImpl(IUserDao userDao, IJSRuntime jsRuntime)
     {
         this.userDao = userDao;
         this.jsRuntime = jsRuntime;
     }
-
+    
+    public UserServiceImpl( )
+    {
+    }
     public async Task CreateUserAsync(string username, string password)
     {
         validateUsername(username);
@@ -31,6 +34,8 @@ public class UserServiceImpl : IUserService
 
         await userDao.SaveUserAsync(new User(username, password)); 
     }
+
+    
 
     public async Task LoginAsync(string username, string password)
     {
@@ -104,23 +109,35 @@ public class UserServiceImpl : IUserService
         return new ClaimsIdentity(claims, "apiauth_type");
     }
 
-    private async Task CacheUserAsync(User user)
+    public async Task CacheUserAsync(User user)
     {
         string serialisedData = JsonSerializer.Serialize(user);
         await jsRuntime.InvokeVoidAsync("sessionStorage.setItem", "currentUser", serialisedData);
     }
 
-    private void ValidateLoginCredentials(string password, User user)
+    public void  ValidateLoginCredentials(string password, User user)
     {
         if (user==null) {
             throw new Exception("Username not found");
         }
 
-        if (!password.Equals(user.Password)) {
+        if (!password.Equals(user.Password))
+        {
             throw new Exception("Password Incorrect");
         }
+
+        GetCurrentUser(user.Username);
+       
+
     }
 
+    public void GetCurrentUser(String userName)
+    {
+        currentUser = userName;
+        Console.WriteLine( "i am here "+ currentUser);
+    }
+    
+    
     public async Task<User?> GetUserAsync(string username)
     {
         throw new NotImplementedException();

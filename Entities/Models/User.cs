@@ -8,6 +8,7 @@ public class User
     public User(string Username, string Password) {
         this.Username = Username;
         this.Password = Password;
+     
     }
     
   
