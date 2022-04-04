@@ -15,9 +15,9 @@ public class ISubForumImp : ISubForum
         this.subForumDao = subForumDao;
     }
 
-    public async Task CreateAPost(SubForum subForum )
+    public async Task<SubForum> CreateAPost(SubForum subForum)
     {
-       await subForumDao.CreateAPost(subForum);
+    return await subForumDao.CreateAPost(subForum);
     }
 
     public async Task<List<SubForum>?> GetAllTitlesAsync()

@@ -4,7 +4,7 @@ namespace Assigntment1.models;
 
 public class SubForum
 {
-    //public ICollection<SubForum> AllSubForums { get; set; }
+    
   
     public Guid Guid
     {

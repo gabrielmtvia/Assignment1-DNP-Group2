@@ -1,87 +1,83 @@
 [
   {
-    "AllSubForums": null,
     "Guid": "b5fac642-d669-4e33-8802-7f373ac0de03",
     "OwnedBy": null,
     "Title": "Test final",
     "Description": "iuehfiweuhfowefpiojwepifjwepifjewpfjewpifj"
   },
   {
-    "AllSubForums": null,
     "Guid": "2faf2a56-23b2-4aad-816e-8589793db723",
     "OwnedBy": null,
     "Title": "dfs",
     "Description": "fdsf"
   },
   {
-    "AllSubForums": null,
     "Guid": "1b517b1c-4a72-4590-b365-05efe83ae1ce",
     "OwnedBy": null,
     "Title": "Travel",
     "Description": "When Columbus arrived on Hispaniola in the 15th Century, he encountered the Ta\u00EDno, an Arawakan-speaking people who came from the Orinoco Delta of present-day Venezuela, emigrating as early as 400 BCE. While it is often assumed that the Ta\u00EDno"
   },
   {
-    "AllSubForums": null,
     "Guid": "2e2f64cd-e0e0-48cd-9364-bffa55414dcc",
     "OwnedBy": null,
     "Title": "Food",
     "Description": "In January 2022, Lucas Sin, one of Food \u0026 Wine\u0027s best new chefs of 2021, took a $100 taxi from San Juan straight to a nearly four-hour dinner at Bacoa (then another $100 taxi back), describing the restaurant as \u0022seriously one of the most special restaurants in America\u0022.\n\n\u0022That was my favourite meal in a long time \u2013 maybe the last two years \u2013 and certainly probably one of those meals I\u0027m going to remember for the rest of my life, on par with insane technical achievements at fine-dining tasting menus,\u0022 said Sin, also comparing Bacoa to New York\u0027s Blue Hill at Stone Barns, often cited as one of America\u0027s best restaurants.\n\n"
   },
   {
-    "AllSubForums": null,
     "Guid": "a58042a2-cb1a-431f-9996-95cc2fd0b485",
     "OwnedBy": null,
     "Title": "Sport",
     "Description": "The 28-year-old has left Robert Page\u0027s squad and returned to Tottenham Hotspur.\n\nThe Football Association of Wales (FAW) has given no reason for Davies\u0027 departure following the World Cup play-off semi-final win over Austria.\n\nHe played the full 90 minutes of that 2-1 win on Thursday.\n\n"
   },
   {
-    "AllSubForums": null,
     "Guid": "55352a89-f530-463a-8829-2590c8fb739a",
     "OwnedBy": null,
     "Title": "Future",
     "Description": "Some essential features on BBC sites just won\u2019t work without cookies. And having other cookies switched off can seriously affect the way you\u2019ll be able to enjoy our services.\n\nPlease check your cookie settings below and turn on any cookies you\u2019re happy with.\n\n\u201CStrictly necessary\u201D cookies are on by default but can be turned off in your browser settings.\n\nFunctional and Performance cookies can be turned on or off below and your preferences are automatically saved."
   },
   {
-    "AllSubForums": null,
     "Guid": "a468a20f-649b-44d9-bad1-5f4da1f21145",
     "OwnedBy": null,
     "Title": "Culture",
     "Description": "Based on Min Jin Lee\u0027s bestselling 2017 novel, the story centres on Sunja, played as a girl by Yu-na Jeon, in a delightful performance. For much of the story, Min-ha Kim plays her as a young woman who moves to Japan with her husband, a Korean minister. But the true heart of the series is Yuh-jung Youn, who won last year\u0027s best supporting actress Oscar as the blunt but warm grandmother in Minari. She plays the older Sunja, who lives in Osaka with her son, Mozasu (Soji Arai), the owner of pachinko gaming parlours (arcades popular in Japan where people play a game resembling pinball). All three actresses mesh perfectly, depicting a life that includes a misbegotten romance in Korea, and years of hard work in Japan selling kimchi from a street cart to support her family. The oldest Sunja\u0027s calm but expressive face contains them all. Wise, observant, deeply feeling and still troubled, she carries the weight of her personal past and of history.   "
   },
   {
-    "AllSubForums": null,
     "Guid": "e5292320-6c41-46e4-a0af-f3971b2c97c5",
     "OwnedBy": null,
     "Title": "Film",
     "Description": "The film has its genesis in the largely autobiographical 1939 novel Goodbye to Berlin by Christopher Isherwood, who had travelled to the city in 1929 in pursuit of its vibrant gay scene. There, he lived among a crowd of misfits, who formed the basis for the likes of the ambitiously bright-eyed Sally Bowles and the provocative Master of Ceremonies, who was played by Joel Grey in the 1972 film (and who beat Al Pacino, James Caan and Robert Duvall to the best supporting actor Oscar). While sex between men was illegal there as it was in Britain, Berlin became a magnet for sex tourism and hundreds of gay bars appeared throughout the city. What Isherwood found was a country blindly barrelling into the abyss as its inhabitants drowned in decadence. Anti-Semitism was on the rise, Nazi rallies doubled, trebled and quadrupled in size and the bohemians \u2013 gay people, communists \u2013 all living like every year was their last, were soon to be purged and imprisoned in concentration camps alongside the Jews (Sam Mendes\u0027 1993 theatrical adaptation of the musical ended on this very grim note).\n\n"
   },
   {
-    "AllSubForums": null,
     "Guid": "b627ad5e-be2b-446d-b0b6-87b62ab4c7c5",
     "OwnedBy": null,
     "Title": "Art",
     "Description": "\u0022Portraiture stands apart from other genres of art as it marks the intersection between portrait, biography and history. They are more than artworks; when people look at portraits, they think they are encountering that person,\u0022 says Alison Smith, chief curator at the National Portrait Gallery in London.\n\n"
   },
   {
-    "AllSubForums": null,
     "Guid": "d773c645-f8fc-4023-914a-6bd96e253110",
     "OwnedBy": null,
     "Title": "world cup",
     "Description": "coming soon"
   },
   {
-    "AllSubForums": null,
     "Guid": "6f715312-bfae-46ec-b471-049eb20d2082",
     "OwnedBy": null,
     "Title": "world cup 2022",
     "Description": "is coming soon"
   },
   {
-    "AllSubForums": null,
     "Guid": "b0a902eb-6f88-4596-887c-ec1e7c75abfa",
     "OwnedBy": null,
     "Title": "fun",
     "Description": "nothing"
+  },
+  {
+    "Guid": "ae3e205a-fca9-43aa-af3f-fd17a04cd6af",
+    "OwnedBy": {
+      "Username": "hihih",
+      "Password": "string"
+    },
+    "Title": "fsafsa",
+    "Description": "striggggggggng"
   }
-
 ]

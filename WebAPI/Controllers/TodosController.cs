@@ -9,12 +9,12 @@ namespace WebAPI.Controllers;
 [ApiController]
 [Route("[Controller]")]
 //We inherit from ControllerBase to get access to convenient methods.
-public class Controller: ControllerBase
+public class TodosController: ControllerBase
 {
     
     private ISubForum subForum;
 
-    public Controller(ISubForum subForum)
+    public TodosController(ISubForum subForum)
     {
         this.subForum = subForum;
     }
@@ -57,37 +57,24 @@ public class Controller: ControllerBase
     }
     
     
-    // [HttpGet]
-    // [Route("{id:Int}")]
-    // public async Task<ActionResult> GetById([FromRoute] Guid id)
-    // {
-    //     // Guid guid = Guid.Parse(id);
-    //     try
-    //     {
-    //          await subForum.GetPostById(id);
-    //         return Ok();
-    //     }
-    //     catch (Exception e)
-    //     {
-    //         return StatusCode(500, e.Message);
-    //     }
-    //     
-    // }
+  
     
-    //
-    // [HttpPost]
-    // public async Task<ActionResult<SubForum>> AddTodo([FromBody] SubForum todo)
-    // {
-    //     try
-    //     {
-    //         SubForum added = await subForums
-    //         return Created($"/todos/{added.Id}", added);
-    //     }
-    //     catch (Exception e)
-    //     {
-    //         return StatusCode(500, e.Message);
-    //     }
-    // }
-    //
+    
+    [HttpPost]
+    public async Task<ActionResult<SubForum>> AddTodo([FromBody] SubForum todo)
+    {
+        try
+        {
+            
+         SubForum added =  await subForum.CreateAPost(todo);
+            
+            return Created($"/{added.Guid}", added);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, e.Message);
+        }
+    }
+    
     
 }
