@@ -11,5 +11,5 @@ public interface IUserService
     Task LogoutAsync();
     public Task<User?> GetUserAsync(string username);
     public Task<ClaimsPrincipal?> GetUserAsync();
-    public Action<ClaimsPrincipal> OnAuthStatesChanged { get; set; }
+    public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; }
 }

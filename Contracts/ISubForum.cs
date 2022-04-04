@@ -4,7 +4,7 @@ namespace Contracts;
 
 public interface ISubForum
 {
-   Task CreateAPost(String title, String forumdescriptionId);
+   Task CreateAPost(SubForum subForum);
 
    Task<List<SubForum>?> GetAllTitlesAsync();
    Task<SubForum> GetPostById(Guid id);

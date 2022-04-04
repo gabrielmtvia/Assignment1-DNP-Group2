@@ -21,7 +21,7 @@ public class SimpleAuthenticationStateProvider : AuthenticationStateProvider
          * and this method itself notifies the app about a change.
          */
         this.iUserService = iUserService;
-        iUserService.OnAuthStatesChanged += AuthStateChanged;
+        iUserService.OnAuthStateChanged += AuthStateChanged;
     }
 
     // This method is called by Blazor framework whenever authentication or authorization needs to be evaluated.

@@ -13,14 +13,14 @@ public class JsonSubForumDao : SubForumDao
         this.context = context;
     }
 
-    public async Task CreateAPost(string title, string description)
+    public async Task CreateAPost(SubForum subForum)
     {
-        SubForum subForum = new SubForum(title, description);
         //subForum.OwnedBy = User
         subForum.Guid = Guid.NewGuid();
-
+       // subForum.OwnedBy.Username = 
         context.Forums.Add(subForum);
         await context.SaveChangesAsync();
+     
     }
 
     public async Task<List<SubForum>?> GetAllTitlesAsync()

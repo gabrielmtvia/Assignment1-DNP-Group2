@@ -1,5 +1,6 @@
 ﻿@page "/Titles"
 @using Contracts
+@using Assigntment1.models
  
 @inject ISubForum iSubForum
 @inject NavigationManager navMgr;
@@ -26,7 +27,7 @@ else
         <h4 >Welcome to see the Posts</h4>
         <div class="container mt-100">
             <div class="row">
-                @foreach (Assigntment1.models.SubForum subForum in alltitles)
+                @foreach (SubForum subForum in alltitles)
                 {
                     <div class="col-md-4 col-sm-6">
                         <div class="card mb-30 body">
@@ -43,11 +44,12 @@ else
 
 @code {
 
-    private List<Assigntment1.models.SubForum>? alltitles;
+    private List<SubForum>? alltitles;
 
     protected override async void OnInitialized()
     {
         alltitles = await iSubForum.GetAllTitlesAsync();
+     
     }
     
     

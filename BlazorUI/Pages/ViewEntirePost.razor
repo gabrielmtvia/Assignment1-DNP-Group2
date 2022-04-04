@@ -2,7 +2,7 @@
 @using Contracts
 @using Assigntment1.models
 @inject ISubForum iSubForum
-@inject NavigationManager navMgr;
+@inject NavigationManager navMgr
 @inject SubForum subForum
 
 
@@ -11,13 +11,8 @@
     [Parameter]
     public string? GuidId { get; set; }
     
-    // public async Task<Assigntment1.models.SubForum> getPost(String GuidId)
-    // {
-    //     Guid myGuid = Guid.Parse(GuidId);
-    //     return await iSubForum.GetPostById(myGuid);
-    // }
-
-    private Assigntment1.models.SubForum model;
+    
+    private SubForum model;
     
     protected override async void OnInitialized()
     {

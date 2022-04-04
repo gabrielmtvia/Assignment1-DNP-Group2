@@ -15,7 +15,7 @@
 
     <ItemGroup>
       <None Update="Pages\SubForum.razor.css.js">
-        <DependentUpon>SubForum.razor</DependentUpon>
+        <DependentUpon>SubForumBlazor.razor</DependentUpon>
       </None>
     </ItemGroup>
 

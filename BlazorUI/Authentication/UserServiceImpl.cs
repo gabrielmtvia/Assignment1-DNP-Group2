@@ -20,9 +20,7 @@ public class UserServiceImpl : IUserService
         this.jsRuntime = jsRuntime;
     }
     
-    public UserServiceImpl( )
-    {
-    }
+
     public async Task CreateUserAsync(string username, string password)
     {
         validateUsername(username);
@@ -71,11 +69,6 @@ public class UserServiceImpl : IUserService
         }
 
         return principal;
-    }
-
-    public Action<ClaimsPrincipal> OnAuthStatesChanged
-    {
-        get; set;
     }
 
     private async Task ClearUserFromCacheAsync()
@@ -134,7 +127,8 @@ public class UserServiceImpl : IUserService
     public void GetCurrentUser(String userName)
     {
         currentUser = userName;
-        Console.WriteLine( "i am here "+ currentUser);
+   
+        Console.WriteLine( "i am here in user serviceImp "+ currentUser);
     }
     
     

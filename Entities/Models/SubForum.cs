@@ -4,8 +4,8 @@ namespace Assigntment1.models;
 
 public class SubForum
 {
-    public ICollection<SubForum> AllSubForums { get; set; }
-
+    //public ICollection<SubForum> AllSubForums { get; set; }
+  
     public Guid Guid
     {
         set;
@@ -36,10 +36,10 @@ public class SubForum
         Description = description;
     }
     public SubForum() {
-        AllSubForums = new List<SubForum>();
+       // AllSubForums = new List<SubForum>();
 
     }
-
+       
     
-    public ICollection<Post> Posts { get; set; }
+   // public ICollection<Post> Posts { get; set; }
 }
