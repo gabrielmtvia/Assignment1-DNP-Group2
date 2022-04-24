@@ -9,12 +9,12 @@ namespace WebAPI.Controllers;
 [ApiController]
 [Route("[Controller]")]
 //We inherit from ControllerBase to get access to convenient methods.
-public class TodosController: ControllerBase
+public class ForumController: ControllerBase
 {
     
     private ISubForum subForum;
 
-    public TodosController(ISubForum subForum)
+    public ForumController(ISubForum subForum)
     {
         this.subForum = subForum;
     }
@@ -59,7 +59,7 @@ public class TodosController: ControllerBase
     
   
     
-    
+     
     [HttpPost]
     public async Task<ActionResult<SubForum>> AddTodo([FromBody] SubForum todo)
     {

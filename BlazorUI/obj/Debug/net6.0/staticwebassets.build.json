@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "UuRkUkx66isg2m1U5HWvJbhffQH/MeFXAm2cz9H7oDo=",
+  "Hash": "FyNuuu31TRR0jxrNAtdsovcQiBUDJEiBz1OJd+7+504=",
   "Source": "BlazorUI",
   "BasePath": "_content/BlazorUI",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\WebAPI\\WebAPI.csproj",
+      "Version": 2,
+      "Source": "WebAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "BlazorUI\\wwwroot",
