@@ -12,18 +12,18 @@ public class SubForum
         get;
     }
     
-    public User OwnedBy
+    public User? OwnedBy
     {
         set;
         get;
     }
-    public String Title
+    public String? Title
     {
         set;
         get;
     }
 
-    public String Description
+    public String? Description
     {
         set;
         get;

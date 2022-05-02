@@ -81,7 +81,7 @@
         subForum.OwnedBy =new User(username);
         Console.WriteLine(userServiceImp.currentUser);
 
-         subForumService.CreateAPost(subForum);
+         await subForumService.CreateAPost(subForum);
         showModal = true;
     }
     

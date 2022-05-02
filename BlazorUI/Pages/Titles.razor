@@ -14,7 +14,7 @@
 
 else
 {
-    
+
 
     if (!alltitles.Any())
     {
@@ -32,8 +32,8 @@ else
                     <div class="col-md-4 col-sm-6">
                         <div class="card mb-30 body">
                             <div class="card-body text-center">
-                                <h4 class="card-title" > <a href="ViewEntirePost/@subForum.Guid">@subForum.Title</a> </h4>
-                                                        
+                                <h4 class="card-title"> <a href="ViewEntirePost/@subForum.Guid">@subForum.Title</a> </h4>
+
                             </div>
                         </div>
                     </div>
@@ -41,18 +41,16 @@ else
             </div>
         </div>
     }
+}
 
 @code {
 
     private List<SubForum>? alltitles;
 
-    protected override async void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        alltitles = await iSubForum.GetAllTitlesAsync();
+      alltitles = await iSubForum.GetAllTitlesAsync();
      
     }
     
-    
-
-    
-}}
+}

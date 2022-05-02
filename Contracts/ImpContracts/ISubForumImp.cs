@@ -17,6 +17,7 @@ public class ISubForumImp : ISubForum
 
     public async Task<SubForum> CreateAPost(SubForum subForum)
     {
+        subForum.Guid = Guid.NewGuid();
     return await subForumDao.CreateAPost(subForum);
     }
 

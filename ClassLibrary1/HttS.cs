@@ -15,7 +15,7 @@ public class HttS : SubForumDao
         string todoAsJson = JsonSerializer.Serialize(subForum);
 
         StringContent content = new(todoAsJson, Encoding.UTF8, "application/json");
-
+        //https://localhost:7012/Forum
         HttpResponseMessage response = await client.PostAsync("https://localhost:7012/Forum", content);
         string responseContent = await response.Content.ReadAsStringAsync();
         
@@ -52,9 +52,23 @@ public class HttS : SubForumDao
         return (List<SubForum>?) subForums;
     }
 
-    public Task<SubForum> getPostById(Guid id)
+    public async Task<SubForum> getPostById(Guid id)
     {
-        throw new NotImplementedException();
+        using HttpClient client = new();
+        HttpResponseMessage response = await client.GetAsync($"https://localhost:7012/Forum/{id}");
+        string content = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception($"Error: {response.StatusCode}, {content}");
+        }
+       
+        SubForum returned = JsonSerializer.Deserialize<SubForum>(content, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        
+        return returned;
     }
 
     

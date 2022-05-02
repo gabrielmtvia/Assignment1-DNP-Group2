@@ -25,7 +25,7 @@ public class ForumController: ControllerBase
     
     //The return type is ActionResult, which returns an http response with an ICollection<Todo>.
     [HttpGet]
-    [Route("getAll ")]
+  
     public async Task<ActionResult<SubForum>> GetAll()
     {
         try
@@ -66,6 +66,7 @@ public class ForumController: ControllerBase
     {
         try
         {
+            
             
          SubForum added =  await subForum.CreateAPost(todo);
             

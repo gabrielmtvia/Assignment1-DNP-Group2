@@ -5,6 +5,18 @@
 @inject NavigationManager navMgr
 @inject SubForum subForum
 
+<h3>ViewEntirePost</h3>
+ @* if u dont set model != null, so in compiler you will get an object refrence cannot be set to null... *@
+@if(model != null ){
+    <div class="col-md-4 col-sm-6">
+        <div class="card mb-30 body">
+            <div class="card-body text-center">
+                <h4 class="card-title">@model.Title</h4>
+                <p>@model.Description</p>
+            </div>
+        </div>
+    </div>
+} 
 
 @code {
    
@@ -12,7 +24,7 @@
     public string? GuidId { get; set; }
     
     
-    private SubForum model;
+    private SubForum? model;
     
     protected override async void OnInitialized()
     {
@@ -21,14 +33,3 @@
     }
 }
 
-<h3>ViewEntirePost</h3>
- 
-
-<div class="col-md-4 col-sm-6">
-    <div class="card mb-30 body">
-        <div class="card-body text-center">
-            <h4 class="card-title">@model.Title</h4>
-            <p>@model.Description</p>
-        </div>
-    </div>
-</div>

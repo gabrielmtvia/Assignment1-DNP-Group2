@@ -16,7 +16,7 @@ public class JsonSubForumDao : SubForumDao
     public async Task<SubForum> CreateAPost(SubForum subForum)
     {
         //subForum.OwnedBy = User
-        subForum.Guid = Guid.NewGuid();
+         
        // subForum.OwnedBy.Username = 
         context.Forums.Add(subForum);
         await  context.SaveChangesAsync();
