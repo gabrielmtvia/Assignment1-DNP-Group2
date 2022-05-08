@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wvVjqY4ANR8HSxZ+5bOiVUtzblyfTJGk18JB+V8kk54w0rF4HK8DxztgqVBM64tl8Eppk1Mpw33ITGp1FN3TQQ==",
+  "dgSpecHash": "t1S2uih8m9Dzblj6CMCWTZb97bjMKbrKzix2tJju1FFpdax0Js1v60yUEAK2YrOfK9R6I/imv6KbUesoYqXi8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hamod\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

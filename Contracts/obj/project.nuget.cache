@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VgsqSuKsvzRss7Wxx4zO9ol4iO/0wzv87SulbOqfZss+QTiwQZ25J6l1JkS7r2xnWFoAUN/GLKOg7KOX01YSjQ==",
+  "dgSpecHash": "mcgxe5p+FGdkUm5ir3SlDco01/nZL3hzNSgimAYwp4hNb7WIRGdkOQwl8hefzdV6er8kaiqQk8BQ0/+3hsOQVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\Contracts\\Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hamod\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

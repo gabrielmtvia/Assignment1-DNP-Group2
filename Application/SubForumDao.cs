@@ -7,5 +7,5 @@ public interface SubForumDao
      Task<SubForum> CreateAPost(SubForum subForum);
      Task<List<SubForum>?> GetAllTitlesAsync();
 
-     Task<SubForum> getPostById(Guid id);
+     Task<SubForum?> getPostById(Guid id);
 }

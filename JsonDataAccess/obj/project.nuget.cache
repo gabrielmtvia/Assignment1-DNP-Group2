@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WehRTvN7lZD+XBy0Q1KS6CxBlY3261awbxY8zEMkIXeAOS6ZJLPHKVVbCDPri46Fz/BIbbgtWMMqxyOeHsVwfA==",
+  "dgSpecHash": "I7WXdz4DZPWlZofUb9x1r3Lnpmp/svTfhYFvOX2JgC5KUUGJjqGzOZk7aLOybVXyrDgH8nIojK1WPhq+5dAdzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hamod\\DNPTutorial\\Assignment1-DNP-Group2\\JsonDataAccess\\JsonDataAccess.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hamod\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
